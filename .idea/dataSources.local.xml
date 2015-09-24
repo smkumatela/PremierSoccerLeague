@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - psldb@localhost" uuid="ca161eef-a88e-42d3-b1a8-9d8779ead6e7">
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <schema-pattern>psldb.*</schema-pattern>
+      <default-schemas>psldb.*</default-schemas>
+    </data-source>
+  </component>
+</project>
