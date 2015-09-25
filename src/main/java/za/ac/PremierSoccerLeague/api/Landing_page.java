@@ -2,6 +2,7 @@ package za.ac.PremierSoccerLeague.api;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import za.ac.PremierSoccerLeague.domain.PremierSoccerLeague;
 
 /**
  * Created by Songezo on 2015-09-24.
@@ -9,8 +10,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping(value = "/")
 public class Landing_page {
+    @RequestMapping(value = "/")
+    public PremierSoccerLeague getPremierSoccerLeague(){
 
-    public String gethi(){
-        return "hello world";
+        PremierSoccerLeague newPremierSoccerLeague = new PremierSoccerLeague
+                .Builder("BPL").Leaguename("Berclays Premiership").build();
+
+        return newPremierSoccerLeague;
     }
 }
