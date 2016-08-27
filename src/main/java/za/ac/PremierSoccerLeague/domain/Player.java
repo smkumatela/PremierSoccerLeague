@@ -1,6 +1,9 @@
 package za.ac.PremierSoccerLeague.domain;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import java.io.Serializable;
 
 /**
@@ -11,12 +14,9 @@ public class Player implements Serializable{
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-
     private String lastName;
     private String position;
     private int age;
-//    @OneToMany(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
-//    @JoinColumn(name = "name_id")
     private String sponsor;
 
 

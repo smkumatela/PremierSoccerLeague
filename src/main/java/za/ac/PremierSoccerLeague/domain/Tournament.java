@@ -15,6 +15,9 @@ public class Tournament implements Serializable {
     private String name;
     private int numOfTeams;
     private double prize;
+    @Embedded
+    @JoinColumn(name = "channel")
+    private Broadcaster channel;
 
     private Tournament() {
 
@@ -31,6 +34,10 @@ public class Tournament implements Serializable {
     public int getNumOfTeams() {
         return numOfTeams;
     }
+    public Broadcaster getChannel(){
+        return channel;
+    }
+
 
     public double getPrize() {
         return prize;
@@ -38,6 +45,8 @@ public class Tournament implements Serializable {
 
     public Tournament(Builder builder) {
         id = builder.id;
+        this.channel = builder.channel;
+
         name = builder.name;
         numOfTeams = builder.numOfTeams;
         prize = builder.prize;
@@ -48,6 +57,8 @@ public class Tournament implements Serializable {
         private String name;
         private int numOfTeams;
         private double prize;
+        private Broadcaster channel;
+
 
         public Builder(String name) {
             this.name = name;
@@ -57,7 +68,10 @@ public class Tournament implements Serializable {
             this.id = value;
             return this;
         }
-
+        public Builder channel(Broadcaster value){
+            this.channel = value;
+            return this;
+        }
         public Builder numOfTeams(int value) {
             this.numOfTeams = value;
             return this;
@@ -71,6 +85,8 @@ public class Tournament implements Serializable {
         public Builder copy(Tournament value){
             this.id = value.id;
             this.name = value.name;
+            this.channel = value.channel;
+
             this.numOfTeams = value.numOfTeams;
             this.prize = value.prize;
             return this;

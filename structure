@@ -1,0 +1,8 @@
+Domain******Entities->Entity
+                    ->relationship(Embeddable)
+                    ->creating Immutable objects(Builds class)
+
+Factory***** creating objects
+Repository*****CRUD
+Services****how you going to pull staff from database to api
+Api******your json objects exposure,mapping urls

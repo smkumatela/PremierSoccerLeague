@@ -15,8 +15,7 @@ public class Team implements Serializable{
     private String teamName;
     private String location;
     @Embedded
-    private Broadcaster channel;
-    @Embedded
+    @JoinColumn(name = "coaching")
     private TechnicalTeam coach;
     @OneToMany(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
     @JoinColumn(name = "team_Id")
@@ -35,16 +34,12 @@ public class Team implements Serializable{
     public String getLocation(){
         return location;
     }
-    public Broadcaster getChannel(){
-        return channel;
-    }
     public TechnicalTeam getCoach(){return coach;}
     public List<Player> getPlayers(){
         return players;
     }
 
     public Team(Builder builder){
-        this.channel = builder.channel;
         this.id = builder.id;
         this.players = builder.players;
         this.teamName = builder.teamName;
@@ -56,7 +51,6 @@ public class Team implements Serializable{
         private Long id;
         private String teamName;
         private String location;
-        private Broadcaster channel;
         private TechnicalTeam coach;
         private List<Player> players;
 
@@ -68,10 +62,7 @@ public class Team implements Serializable{
             this.id = value;
             return this;
         }
-        public Builder channel(Broadcaster value){
-            this.channel = value;
-            return this;
-        }
+
         public Builder coach(TechnicalTeam value){
             this.coach = value;
             return this;
@@ -86,7 +77,6 @@ public class Team implements Serializable{
         }
 
         public Builder copy(Team value){
-            this.channel = value.channel;
             this.players = value.players;
             this.id = value.id;
             this.teamName = value.teamName;

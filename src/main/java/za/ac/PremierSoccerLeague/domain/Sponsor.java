@@ -17,10 +17,6 @@ public class Sponsor implements Serializable{
     private String name;
     private String sponsors;
 
-//    @OneToMany(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
-//    @JoinColumn(name = "sponsor_Id")
-//    private List<Player> players;
-
     private Sponsor(){
 
     }

@@ -12,11 +12,11 @@ public class PremierSoccerLeague implements Serializable{
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    private String Leaguename;
+    private String LeagueName;
     @Column(unique = true)
     private String abbreviation;
     @OneToMany(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
-    @JoinColumn(name = "PremierSoccerLeagueIDu")
+    @JoinColumn(name = "stadiumsID")
     private List<Stadium> stadiums;
 
     private PremierSoccerLeague(){
@@ -25,7 +25,7 @@ public class PremierSoccerLeague implements Serializable{
 
     public PremierSoccerLeague(Builder builder){
         id = builder.id;
-        Leaguename = builder.Leaguename;
+        LeagueName = builder.Leaguename;
         abbreviation = builder.abbreviation;
         stadiums = builder.stadiums;
     }
@@ -33,8 +33,8 @@ public class PremierSoccerLeague implements Serializable{
     public Long getId(){
         return id;
     }
-    public String getLeaguename(){
-        return Leaguename;
+    public String getLeagueName(){
+        return LeagueName;
     }
     public String getAbbreviation(){
         return abbreviation;
@@ -69,7 +69,7 @@ public class PremierSoccerLeague implements Serializable{
         }
 
         public Builder copy(PremierSoccerLeague value){
-            this.Leaguename = value.Leaguename;
+            this.Leaguename = value.LeagueName;
             this.abbreviation = value.abbreviation;
             this.id = value.id;
             this.stadiums = value.getStadiums();

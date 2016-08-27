@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="1585618369">
-    <data-source source="LOCAL" name="MySQL - psldb@localhost" uuid="ca161eef-a88e-42d3-b1a8-9d8779ead6e7">
+  <component name="DataSourceManagerImpl" format="xml" hash="2369441761">
+    <data-source source="LOCAL" name="MySQL - soccer@localhost" uuid="dc7bdca7-e7c7-4c7e-8976-b10771410794">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306/psldb</jdbc-url>
+      <jdbc-url>jdbc:mysql://localhost:3306/soccer</jdbc-url>
       <driver-properties>
+        <property name="autoReconnect" value="true" />
         <property name="zeroDateTimeBehavior" value="convertToNull" />
         <property name="tinyInt1isBit" value="false" />
         <property name="characterEncoding" value="utf8" />
