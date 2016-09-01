@@ -1,14 +1,1 @@
-za\ac\PremierSoccerLeague\service\TeamServiceTest.class
-za\ac\PremierSoccerLeague\repository\TestCrudPremierSoccerLeague.class
-za\ac\PremierSoccerLeague\domain\TeamTest.class
-za\ac\PremierSoccerLeague\domain\BroadcasterTest.class
-za\ac\PremierSoccerLeague\repository\TestCrudPlayer.class
-za\ac\PremierSoccerLeague\domain\TechnicalTeamTest.class
-za\ac\PremierSoccerLeague\domain\PlayerTest.class
-za\ac\PremierSoccerLeague\domain\TestSuite.class
-za\ac\PremierSoccerLeague\domain\PremierSoccerLeagueTest.class
-za\ac\PremierSoccerLeague\service\PremierSoccerLeagueServiceTest.class
 za\ac\PremierSoccerLeague\AppTest.class
-za\ac\PremierSoccerLeague\repository\TestCrudTournament.class
-za\ac\PremierSoccerLeague\repository\TestCrudTeam.class
-za\ac\PremierSoccerLeague\domain\TournamentTest.class

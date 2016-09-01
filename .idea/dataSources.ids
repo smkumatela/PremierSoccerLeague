@@ -7,57 +7,5 @@
     </database-info>
     <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
     <schema name="" catalog="soccer"/>
-    <table name="player" schema="" catalog="soccer" type="TABLE">
-      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
-      <column name="age" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
-      <column name="last_name" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
-      <column name="position" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
-      <column name="sponsor" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
-      <column name="team_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5"/>
-      <primary-key name="PRIMARY" columns="id"/>
-      <foreign-key name="FK_5q11flfd61t4n9eepixi8ltup" columns="team_id" ref-table="team" ref-schema="" ref-catalog="soccer" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
-      <index name="FK_5q11flfd61t4n9eepixi8ltup" unique="false" columns="team_id"/>
-    </table>
-    <table name="premier_soccer_league" schema="" catalog="soccer" type="TABLE">
-      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
-      <column name="league_name" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
-      <column name="abbreviation" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
-      <primary-key name="PRIMARY" columns="id"/>
-      <exported-key name="FK_bj3gwx4bg2gtj4ut61o5tpx92" table="stadium" schema="" catalog="soccer" columns="stadiumsid"/>
-      <index name="UK_hdm7xslm8p4sdid2d8cbn6lk" unique="true" columns="abbreviation"/>
-    </table>
-    <table name="sponsor" schema="" catalog="soccer" type="TABLE">
-      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
-      <column name="name" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
-      <column name="sponsors" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
-      <primary-key name="PRIMARY" columns="id"/>
-    </table>
-    <table name="stadium" schema="" catalog="soccer" type="TABLE">
-      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
-      <column name="location" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
-      <column name="name" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
-      <column name="stadiumsid" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5"/>
-      <primary-key name="PRIMARY" columns="id"/>
-      <foreign-key name="FK_bj3gwx4bg2gtj4ut61o5tpx92" columns="stadiumsid" ref-table="premier_soccer_league" ref-schema="" ref-catalog="soccer" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
-      <index name="FK_bj3gwx4bg2gtj4ut61o5tpx92" unique="false" columns="stadiumsid"/>
-    </table>
-    <table name="team" schema="" catalog="soccer" type="TABLE">
-      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
-      <column name="coaching" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
-      <column name="name" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
-      <column name="location" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
-      <column name="team_name" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
-      <primary-key name="PRIMARY" columns="id"/>
-      <exported-key name="FK_5q11flfd61t4n9eepixi8ltup" table="player" schema="" catalog="soccer" columns="team_id"/>
-    </table>
-    <table name="tournament" schema="" catalog="soccer" type="TABLE">
-      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
-      <column name="channel" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
-      <column name="offers" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
-      <column name="name" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
-      <column name="num_of_teams" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
-      <column name="prize" sqlType="DOUBLE" precision="22" scale="0" nullable="false" jdbcType="8"/>
-      <primary-key name="PRIMARY" columns="id"/>
-    </table>
   </data-source>
 </component>

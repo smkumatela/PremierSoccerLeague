@@ -1,22 +1,5 @@
-C:\Users\Songezo\Documents\Brain Wash\Technical Programming II\PremierSoccerLeague\src\test\java\za\ac\PremierSoccerLeague\repository\TestCrudTournament.java
-C:\Users\Songezo\Documents\Brain Wash\Technical Programming II\PremierSoccerLeague\src\test\java\za\ac\PremierSoccerLeague\repository\TestCrudStadium.java
-C:\Users\Songezo\Documents\Brain Wash\Technical Programming II\PremierSoccerLeague\src\test\java\za\ac\PremierSoccerLeague\repository\TestCrudSponsor.java
-C:\Users\Songezo\Documents\Brain Wash\Technical Programming II\PremierSoccerLeague\src\test\java\za\ac\PremierSoccerLeague\domain\TeamTest.java
-C:\Users\Songezo\Documents\Brain Wash\Technical Programming II\PremierSoccerLeague\src\test\java\za\ac\PremierSoccerLeague\domain\TournamentTest.java
-C:\Users\Songezo\Documents\Brain Wash\Technical Programming II\PremierSoccerLeague\src\test\java\za\ac\PremierSoccerLeague\repository\TestCrudTeam.java
-C:\Users\Songezo\Documents\Brain Wash\Technical Programming II\PremierSoccerLeague\src\test\java\za\ac\PremierSoccerLeague\domain\SponsorTest.java
-C:\Users\Songezo\Documents\Brain Wash\Technical Programming II\PremierSoccerLeague\src\test\java\za\ac\PremierSoccerLeague\service\PremierSoccerLeagueServiceTest.java
-C:\Users\Songezo\Documents\Brain Wash\Technical Programming II\PremierSoccerLeague\src\test\java\za\ac\PremierSoccerLeague\domain\TestSuite.java
-C:\Users\Songezo\Documents\Brain Wash\Technical Programming II\PremierSoccerLeague\src\test\java\za\ac\PremierSoccerLeague\domain\PremierSoccerLeagueTest.java
-C:\Users\Songezo\Documents\Brain Wash\Technical Programming II\PremierSoccerLeague\src\test\java\za\ac\PremierSoccerLeague\AppTest.java
-C:\Users\Songezo\Documents\Brain Wash\Technical Programming II\PremierSoccerLeague\src\test\java\za\ac\PremierSoccerLeague\repository\TestCrudTechnicalTeam.java
-C:\Users\Songezo\Documents\Brain Wash\Technical Programming II\PremierSoccerLeague\src\test\java\za\ac\PremierSoccerLeague\domain\TechnicalTeamTest.java
-C:\Users\Songezo\Documents\Brain Wash\Technical Programming II\PremierSoccerLeague\src\test\java\za\ac\PremierSoccerLeague\repository\TestCrudBroadcaster.java
-C:\Users\Songezo\Documents\Brain Wash\Technical Programming II\PremierSoccerLeague\src\test\java\za\ac\PremierSoccerLeague\repository\TestCrudLeague.java
-C:\Users\Songezo\Documents\Brain Wash\Technical Programming II\PremierSoccerLeague\src\test\java\za\ac\PremierSoccerLeague\domain\LeagueTest.java
-C:\Users\Songezo\Documents\Brain Wash\Technical Programming II\PremierSoccerLeague\src\test\java\za\ac\PremierSoccerLeague\repository\TestCrudPlayer.java
-C:\Users\Songezo\Documents\Brain Wash\Technical Programming II\PremierSoccerLeague\src\test\java\za\ac\PremierSoccerLeague\domain\StadiumTest.java
-C:\Users\Songezo\Documents\Brain Wash\Technical Programming II\PremierSoccerLeague\src\test\java\za\ac\PremierSoccerLeague\domain\BroadcasterTest.java
-C:\Users\Songezo\Documents\Brain Wash\Technical Programming II\PremierSoccerLeague\src\test\java\za\ac\PremierSoccerLeague\domain\PlayerTest.java
-C:\Users\Songezo\Documents\Brain Wash\Technical Programming II\PremierSoccerLeague\src\test\java\za\ac\PremierSoccerLeague\repository\TestCrudPremierSoccerLeague.java
-C:\Users\Songezo\Documents\Brain Wash\Technical Programming II\PremierSoccerLeague\src\test\java\za\ac\PremierSoccerLeague\service\TeamServiceTest.java
+C:\Users\Songezo\Documents\Brain Wash\TP300S\PremierSoccerLeague\src\test\java\za\ac\PremierSoccerLeague\repositoryTest\PlayerTest.java
+C:\Users\Songezo\Documents\Brain Wash\TP300S\PremierSoccerLeague\src\test\java\za\ac\PremierSoccerLeague\repositoryTest\Test_CRUD_Tournament.java
+C:\Users\Songezo\Documents\Brain Wash\TP300S\PremierSoccerLeague\src\test\java\za\ac\PremierSoccerLeague\AppTest.java
+C:\Users\Songezo\Documents\Brain Wash\TP300S\PremierSoccerLeague\src\test\java\za\ac\PremierSoccerLeague\repositoryTest\Test_CRUD_PremierSoccerLeague.java
+C:\Users\Songezo\Documents\Brain Wash\TP300S\PremierSoccerLeague\src\test\java\za\ac\PremierSoccerLeague\repositoryTest\Test_CRUD_Team.java
